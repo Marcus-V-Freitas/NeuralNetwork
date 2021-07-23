@@ -83,7 +83,7 @@ namespace NeuralNetwork
                     for (int j = 0; j < telemetria.Pesos[camada].GetLength(0); j++)
                     {
                         for (int k = 0; k < telemetria.Pesos[camada].GetLength(1); k++)
-                            Console.Write("  {0:#.##}\ntelemetria", telemetria.Pesos[camada][j, k]);
+                            Console.Write("  {0:#.##}\t", telemetria.Pesos[camada][j, k]);
 
                         Console.WriteLine();
                     }
@@ -94,7 +94,7 @@ namespace NeuralNetwork
                 for (int camada = 1; camada < telemetria.Vies.Length; camada++)
                 {
                     for (int neuronio = 0; neuronio < telemetria.Vies[camada].Length; neuronio++)
-                        Console.Write("  {0:#.##}\ntelemetria", telemetria.Vies[camada][neuronio]);
+                        Console.Write("  {0:#.##}\t", telemetria.Vies[camada][neuronio]);
                     Console.WriteLine();
                 }
 
